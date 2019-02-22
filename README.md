@@ -1,14 +1,10 @@
-#This is a raid project.
+# This is a raid project.
 
-###This project is basically a peasenger, through online, to order the Texi Ride, to reach its destination.
+### This project is basically a peasenger, through online, to order the Texi Ride, to reach its destination.
 
-Use
-
-```
+Use:
 - html5
 - css3
 - java script
 - jQuery
 - bootsrap
-
-```
