@@ -1,0 +1,606 @@
+/* Base CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid;text-decoration: none;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100%;width: 100%; }
+body{
+    width: 100%;
+}
+
+.test {font-family: 'Lato', sans-serif;}
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+a:hover { text-decoration: none }
+.top-section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.header-area{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.header-top-img{
+    position: fixed;
+    z-index: 1;
+    height: 20px;
+    width: 100%;
+    background:url(img/header.png);
+    overflow: hidden;
+    background-size: cover;
+}
+.header-menu{
+    top:20px;
+    position: fixed;
+    z-index: 222;
+    width: 100%;
+}
+.nav-scroll.scrolled{
+    top: 0;
+    width: 100%;
+    background:black;
+    box-shadow: 0px 0px 70px #dfe6e9;
+}
+.nav-bg{
+    background-color: black;
+}
+.logo{}
+.logo h3 a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px
+}
+.logo h3{
+    padding: 15px 0px 5px 0px;
+}
+.nav{
+}
+.nav ul{
+    list-style: none;
+    position: relative;
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 0px 5px 15px;
+}
+.nav ul li a{
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.nav ul li ul li a{
+    color: #666666;
+    padding: 8px;
+}
+.nav ul li ul{
+    float: left;
+    width: 180px;
+    margin-left:-120px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px grey;
+    color: #666666;
+    display: none;
+    position: absolute;
+
+}
+.nav ul ul li ul{
+    float: left;
+    width: 180px;
+    margin-top: 5px;
+    margin-left:-195px;
+    margin-top:-35px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #fff;
+    color: #666666;
+    display: none;
+    position: absolute;
+}
+.nav ul a:hover{
+    color: #F9D763;
+}
+.nab ul ul ul li{
+    display: block;
+}
+.nav ul ul li{
+    display: block;
+}
+.nav ul li:hover i{
+    transition: .5s;
+    transform:rotate(180deg);
+}
+.nav ul ul li:hover i{
+    transform: rotate(-1deg);
+}
+.nav ul ul li:hover .drop-2{
+    display: block;
+    transition: 1s;
+}
+.nav ul li:hover .drop{
+    display: block;
+    transition: .5s;
+
+}
+.top-bg, .top-bg-section{
+    height: 100%;
+    width: 100%;
+
+}
+.top-bg-section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.banner-section{
+    position: absolute;
+    background-image: url("img/top-bg.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-section::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+}
+
+.welcome-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+}
+.table{
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.welcome-text h1{
+    color: #F9D700;
+    font-size: 60px;
+    font-weight: 700;
+}
+.welcome-text h6{
+    color: #fff;
+}
+.text-items{
+    padding-top: 120px;
+}
+.welcome-text p{
+    color: #ccc;
+    font-size: 15px;
+}
+.btn p{
+    margin-left: -15px;
+    padding: 15px 30px;
+    color: black;
+    background-color: #F9D700;
+    font-weight: bold;
+}
+.btn p:hover{
+    background-color: #fff;
+    transition: .5s;
+}
+/*.booking-section{
+    display: block;
+    background-color: #F9D700;
+    width: 400px;
+    height: 500px;
+}*/
+.destination{
+    width: 400px;
+    border: 1px solid #4b5263;
+    padding: 50px;
+    background-color: #F9D700;
+}
+select{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 12px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color:grey;
+}
+.destination p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+::placeholder{
+    color: grey;
+}
+.destination input{
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 12px;
+}
+.button{
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 12px;
+    background-color: black;
+    color: #fff;
+
+}
+.globally{
+    padding: 100px 0px;
+}
+.img-text p{
+    padding-bottom: 20px;
+}
+.img-text{
+    padding: 50px 50px;
+}
+.img-text a:hover{
+    background-color: transparent;
+    border: 1px solid  #F8D600;
+    box-sizing: border-box;
+    color: #F8D600;
+}
+.img-text a{
+    padding: 15px 30px ;
+    background-color: #F8D600;
+    color: black;
+
+}
+#service{
+    padding-top: 80px;
+}
+.services{
+    text-align: center;
+}
+.welcome-section{
+    text-align: center;
+    padding:0px 0px 80px 0px;
+}
+.welcome-section p{
+    font-size: 18px;
+    color: grey;
+}
+.welcome-section h1{
+    font-size:35px;
+   
+}
+.services-items{
+     background:#F9F9FF;
+}
+.services-box{
+    padding:30px 50px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+.services-box i{
+    padding-bottom: 30px;
+    font-size: 25px;
+    color: #222;
+    cursor: pointer;
+
+}
+.services-box h6{
+    font-size: 18px;
+    color: #222;
+    cursor: pointer;
+
+}
+.services-box p{
+    color: grey;
+}
+.services-box:hover{
+    background:black;
+    transition: .5s;
+}
+.services-box:hover h6{
+    color: #F9D700;
+}
+.services-box:hover i{
+    color: #F9D700;
+}
+.glallery-section{
+    background-color: #F9F9FF;
+    margin: 80px 0px;
+}
+.gallaey-welcome-section{
+    text-align: center;
+    padding: 140px 0px 40px 0px;
+}
+.gallaey-welcome-section p{
+    padding-bottom: 60px;
+}
+.items-img{
+    margin-top: 30px;
+    position: relative;
+}
+.items-img img{
+    height: 280px;
+    width: 360px;
+}
+.items-img:hover .hover{
+    transform: scale(1);
+}
+.items-img:hover{
+    transform: scale(.9);
+    transition:.2s;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .4;
+    cursor: pointer;
+    transform: scale(0);
+}
+.top-mrg{
+    margin-top:120px;
+}
+.top{
+    margin-top:-60px;
+}
+.top-1{
+    margin-top: 30px;
+}
+.client-reviews{
+    margin: 50px 0px;
+}
+.all-clint{
+    text-align: center;
+}
+.reviws-box{
+    padding: 30px 60px;
+    box-sizing: border-box;
+    background-color: #F9F9FF;
+}
+.reviws-box i{
+    padding: 8px 3px 0px 0px;
+}
+.reviws-box:hover{
+    background:black;
+    transition: .5s;
+    color: grey;
+}
+.reviws-box:hover h3{
+    color: yellow;
+}
+.section2{
+    margin-top: 15px;
+}
+.experiences-section{
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+.experiences-bg{
+    position: absolute;
+    background-image: url("img/experience-banner.jpg");
+    height:100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#element{
+    padding-top: 80px;
+}
+.welcome-section-experience{
+     height:100%;
+    width: 100%;
+    position: absolute;
+}
+.experiences-bg:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    top: 0;
+    left: 0;
+    opacity: .85;
+    position: absolute;
+
+}
+.experiences-text h2{
+    font-size: 40px;
+    color: black;
+}
+.experiences-btn{
+    margin-top: 30px;
+}
+.experiences-btn a{
+    padding: 12px 25px;
+    background-color:black;
+    color: #fff;
+    font-weight: bold;
+}
+.experiences-btn a:hover{
+    background-color:#fff;
+    color: black;
+}
+.news-and-blog{}
+.blog-welcome-section{
+    text-align: center;
+    padding: 140px 0px 80px 0px;
+}
+.blog-items{}
+.blog-img{
+    width:100%;
+    height:100%;
+    margin: 20px 0px;
+    position: relative;
+}
+.blog img{
+    width: 100%;
+    height: 100%;
+}
+.blog-hover{
+   position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+    opacity: .7;
+
+}
+.blog-hover *{
+     color:#666666;
+     position: relative;
+     z-index: 1;
+     font-size: 100px;
+     cursor: pointer;
+}
+.blog-hover:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    opacity: .;
+
+
+}
+.blog-img:hover .blog-hover{
+    transform: scale(1);
+    transform: .3s;
+}
+.blog-detail{
+    margin-bottom: 120px;
+}
+.blog-detail a{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 7px 15px;
+    border: 1px solid grey;
+    color: black;
+}
+.blog-detail a:hover{
+    background-color: yellow;
+}
+.blog-detail h6{
+    font-size: 20px;
+    padding: 8px 0px;
+}
+.blog-detail p{
+    color: grey;
+    font-style: italic;
+}
+.footer{
+    background-color: #000000;
+    padding: 80px 0px 0px 0px;
+    color: #fff;
+}
+.footer h3{
+    color: #fff;
+    font-size: 16px;
+}
+.footer p{
+    color: grey;
+
+}
+.contact-text i{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px 10px 0px;
+}
+.footer-img{
+    background-image: url("img/header.png");
+    width: 100%;
+    height: 20px;
+    background-size: cover;
+    background-position:bottom;
+}
+.email-form input[type="email"]{
+    padding: 12px 10px;
+    color:black;
+    width: 80%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+ .email-form button{
+    padding: 12px 15px;
+    background-color: yellow;
+    color: black;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: 20px 0px;
+}
+ .email-form button:hover{
+    background: transparent;
+    border: 1px solid yellow;
+    box-sizing: border-box;
+    color:yellow;
+    text-align: center;
+ }
